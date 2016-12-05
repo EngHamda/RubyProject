@@ -1,0 +1,45 @@
+<% content_for :head do %>
+  CourseModelIndex_
+<% end %>
+<!-- <p id="notice"><%= notice %></p> -->
+
+<h1>Courses</h1>
+  <div class="row">
+        <% @courses.each do |course| %>
+          <div class="col-xs-12 col-lg-6 ">
+              <center>
+                <h3><%= course.title %></h3>
+                <p>
+                  <%= image_tag course.course_picture.url,{alt:"Course Picture"} if course.course_picture? %>
+                  <!-- {alt:"Brand"} can add as last attr to any html tag-->
+                </p>
+                <p>
+                  <button class="btn btn-default">
+                    <%= link_to 'View details', course %><span> &raquo;</span>
+                  </button>
+                  <!-- lectures_path course lecture_path-->
+                </p>
+                <%if current_user.instructor %>
+                  <%if current_user == course.user %>
+                  <p><%= link_to 'Edit', edit_course_path(course),class: 'btn btn-success' %></p>
+                  <p><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></p>
+                </center>
+                <% end %>
+              <% end %>
+            </div><!--/.col-xs-6.col-lg-4-->
+        <% end %>
+  </div><!--/row-->
+</div><!--/.container-->
+
+<hr>
+<%if current_user.instructor %> 
+  <div class="btn-group btn-group-justified" >
+    <div class="btn-group" role="group">
+      <%= link_to 'New Course', new_course_path, :class => "btn btn-warning" %> 
+    </div>
+    <div class="btn-group" role="group">
+      <%= link_to 'Create New Lecture', new_lecture_path , :class => "btn btn-info" %>
+    </div>
+  </div> 
+<% end %>
+<hr>

@@ -1,0 +1,44 @@
+<% content_for :head do %>
+  CourseModelShow_
+<% end %>
+<p id="notice"><%= notice %></p>
+
+<div style="float: left;">
+  <p>
+    <!-- <strong>Course picture:</strong> -->
+    <%= image_tag @course.course_picture.url,{alt:"Course Picture",:class => "style_image"} if @course.course_picture? %>
+  </p>
+</div>
+
+<div style="margin-left: 60">
+    <strong>Course Title:</strong>
+    <%= @course.title %>
+    <br>
+    <strong>Lectures:</strong>
+    <ul>
+    <% @course.lectures.each do |lecture| %>
+      <li>
+        <h4><%= link_to lecture.title, lecture_path(lecture.id) %></h4>
+      </li>
+    <% end %>
+    </ul>
+</div>
+
+<hr>
+
+<%if current_user.instructor %>
+	<%if current_user == @course.user %>
+		<%= link_to 'Edit', edit_course_path(@course)  %> |
+	<% end %>
+<% end %>
+<%= link_to 'Back', courses_path %>
+<style>
+  .style_image {
+      width: 190px; height: 125px;
+      margin-right: 20px;
+  }
+  ul{
+    margin-left: 235px;
+  }
+
+</style>

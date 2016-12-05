@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Lec2Ruby
+  course_id: 7
+# one:
+#   title: MyString
+#   content: MyText
+#   attached_file: MyString
+#   course_id: 
+
+# two:
+#   title: MyString
+#   content: MyText
+#   attached_file: MyString
+#   course_id: 

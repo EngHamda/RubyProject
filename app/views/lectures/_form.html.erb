@@ -1,0 +1,46 @@
+<%= form_for(@lecture, :html => {:class => "form-horizontal"}) do |f| %>
+  <% if @lecture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lecture.errors.count, "error") %> prohibited this lecture from being saved:</h2>
+
+      <ul>
+      <% @lecture.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <center>
+    <div class="field form-group">
+      <%= f.label :title, :class => "control-label col-sm-2" %>
+      <div class="col-sm-10">
+        <%= f.text_field :title, :class => "form-control" %>
+      </div>      
+    </div>
+    <div class="field form-group">
+      <%= f.label :content, :class => "control-label col-sm-2" %>
+      <div class="col-sm-10">
+        <%= f.text_area :content,:class =>'ckeditor form-control' %>
+      </div>
+    </div>
+    <div class="field form-group">
+      <%= f.label :attached_file, :class => "control-label col-sm-2" %>
+      <div class="col-sm-10">
+        <%= f.file_field :attached_file, :class => "form-control" %>
+      </div>
+    </div>
+    <div class="field form-group">
+      <strong class="control-label col-sm-2">Course</strong>
+      <% current_user.courses.each do |c| %>
+       <%= f.label :course_id, c.title %>
+       <%= f.radio_button :course_id, c.id %>
+      <% end %> 
+    </div>
+    <div class="actions form-group">
+      <div class="col-sm-offset-1 col-sm-10">
+        <%= f.submit'OK', :class => "btn btn-default"  %>
+      </div>
+    </div>
+  </center>
+<% end %>

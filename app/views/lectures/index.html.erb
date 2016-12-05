@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lectures</h1>
+
+<div class="container">
+        <% @lectures.each do |lecture| %>
+          <div class="row">
+              <h3><%= lecture.title %></h3>
+              <h4><%= lecture.content %></h4>
+              <!-- <div class="caption" style="text-align: center;">
+                
+              </div> -->
+              <%= link_to "Like", like_lecture_path(lecture), method: :put %>
+              <%= link_to "Spam", spam_lecture_path(lecture), method: :put %>
+              <span class="badge">Likes:<%= lecture.get_likes.size %></span>
+              <span class="badge">Spam:<%= lecture.get_dislikes.size %></span>
+
+              <p><%= link_to 'Show', lecture %></p><!-- lectures_path course lecture_path-->
+              <p><%= link_to 'Edit', edit_lecture_path(lecture) %></p>
+              <p><%= link_to 'Destroy', lecture, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            </div><!--/row-->
+        <% end %>
+</div><!--/.container-->
+
+<hr>
+
+<%= link_to 'New Lecture', new_lecture_path %>

@@ -1,0 +1,7 @@
+<p>
+	<%= comment.content %>
+	<%= 'by user: '+comment.user.name %>
+	<% if can? :destroy, comment %>
+		<%= link_to 'Delete', lecture_comment_path(comment.lecture, comment), method: :delete %>
+	<% end %>
+</p>

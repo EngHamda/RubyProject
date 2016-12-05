@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= link_to @lecture.course.title , course_path(@lecture.course.id)%>
+</p>
+
+<p>
+  <strong>Lecture Title:</strong>
+  <%= @lecture.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @lecture.content.html_safe %>
+</p>
+
+<p>
+  <strong>Attached file:</strong>
+  <%= @lecture.attached_file %>
+  <%= link_to 'Download',download_path(@lecture) unless @lecture.attached_file.blank?%>
+</p>
+
+<p>
+	  <%= link_to "LikeLecture", like_lecture_path(@lecture), method: :put %>
+	  <span class="badge">Likes:<%= @lecture.get_likes.size %></span>
+	  <%= link_to "SpamLecture", spam_lecture_path(@lecture), method: :put %>
+	  <span class="badge">Spam:<%= @lecture.get_dislikes.size %></span>
+</p>
+<p>
+	<%if @lecture.comments.any?%>
+		<h2>Comments</h2>
+		<%= render @lecture.comments %>
+	<% end %>
+	<hr>
+	<h2> Add Comment </h2>
+	<%= form_for([@lecture, @lecture.comments.build]) do |f| %>
+	<%= f.text_area :content %>
+	<%= submit_tag "Add" %>
+	<% end  %>
+</p>
+
+<%if current_user.instructor %>
+	<%if current_user == @lecture.course.user %>
+		<%= link_to 'Edit', edit_lecture_path(@lecture) %>|
+	<% end %>
+<% end %>
+<%= link_to 'Back', course_path(@lecture.course.id) %>

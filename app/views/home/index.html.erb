@@ -1,0 +1,20 @@
+
+<% content_for :head do %>
+  Home_
+<% end %>
+
+<h1>Courses</h1>
+  <div class="row">
+        <% @courses.each do |course| %>
+          <div class="col-xs-12 col-lg-6 ">
+              <center>
+	              <h3><%= course.title %></h3>
+	              <p><%= image_tag course.course_picture.url,{alt:"Course Picture"} if course.course_picture? %></p>
+                <!-- {alt:"Brand"} can add as last attr to any html tag-->
+	              <button class="btn btn-default">
+                  <%= link_to '', course %><span>View details &raquo;</span>
+                </button><!-- lectures_path course lecture_path-->
+              </center>
+            </div><!--/.col-xs-6.col-lg-4-->
+        <% end %>
+  </div><!--/row-->

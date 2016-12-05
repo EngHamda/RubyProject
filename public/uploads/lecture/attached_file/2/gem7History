@@ -1,0 +1,491 @@
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject6$ cd ..
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects$ rails new gemProject7
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies......
+Using rake 11.1.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.4
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using rack 1.6.4
+Using mime-types-data 3.2016.0221
+Using arel 6.0.3
+Using debug_inspector 0.0.2
+Using bundler 1.11.2
+Using byebug 8.2.5
+Using coffee-script-source 1.10.0
+Using execjs 2.6.0
+Using thor 0.19.1
+Using concurrent-ruby 1.0.2
+Using multi_json 1.11.3
+Using sass 3.4.22
+Using tilt 2.0.2
+Using spring 1.7.1
+Using sqlite3 1.3.11
+Using rdoc 4.2.2
+Using tzinfo 1.2.2
+Using nokogiri 1.6.7.2
+Using rack-test 0.6.3
+Using mime-types 3.0
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.0.0
+Using sprockets 3.6.0
+Using sdoc 0.4.1
+Using activesupport 4.2.4
+Using loofah 2.0.3
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.6
+Using activemodel 4.2.4
+Using jbuilder 2.4.1
+Using rails-html-sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using activejob 4.2.4
+Using activerecord 4.2.4
+Using actionview 4.2.4
+Using actionpack 4.2.4
+Using actionmailer 4.2.4
+Using railties 4.2.4
+Using sprockets-rails 3.0.4
+Using coffee-rails 4.1.1
+Using jquery-rails 4.1.1
+Using rails 4.2.4
+Using sass-rails 5.0.4
+Using web-console 2.3.0
+Using turbolinks 2.5.3
+Bundle complete! 12 Gemfile dependencies, 55 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler/shared_helpers.rb:78: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler/shared_helpers.rb:78: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects$ cd gemProject7
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ bundle install
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Fetching git://github.com/galetahub/ckeditor.git
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies....
+Using rake 11.1.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.4
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.0.0
+Using rack 1.6.4
+Using mime-types-data 3.2016.0221
+Using arel 6.0.3
+Using acts_as_votable 0.10.0
+Using bcrypt 3.1.11
+Using debug_inspector 0.0.2
+Using bundler 1.11.2
+Using byebug 8.2.5
+Using cancancan 1.13.1
+Using orm_adapter 0.5.0
+Using coffee-script-source 1.10.0
+Using execjs 2.6.0
+Using thor 0.19.1
+Using concurrent-ruby 1.0.2
+Using tilt 2.0.2
+Using multi_json 1.11.3
+Using mini_magick 4.5.1
+Installing nested_form 0.3.2
+Installing remotipart 1.2.1
+Installing safe_yaml 1.0.4
+Using sass 3.4.22
+Using rolify 5.1.0
+Using spring 1.7.1
+Using sqlite3 1.3.11
+Using rdoc 4.2.2
+Using tzinfo 1.2.2
+Using nokogiri 1.6.7.2
+Using rack-test 0.6.3
+Using warden 1.2.6
+Using mime-types 3.0
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.0.0
+Using sprockets 3.6.0
+Installing haml 4.0.7
+Using sdoc 0.4.1
+Using activesupport 4.2.4
+Using loofah 2.0.3
+Installing rack-pjax 0.8.0
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.6
+Using activemodel 4.2.4
+Using climate_control 0.0.3
+Using jbuilder 2.4.1
+Using rails-html-sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using activejob 4.2.4
+Using activerecord 4.2.4
+Using carrierwave 0.10.0
+Using cocaine 0.5.8
+Using actionview 4.2.4
+Using ckeditor 4.1.6 from git://github.com/galetahub/ckeditor.git (at master@123389e)
+Using actionpack 4.2.4
+Using actionmailer 4.2.4
+Using railties 4.2.4
+Using kaminari 0.16.3
+Using sprockets-rails 3.0.4
+Using coffee-rails 4.1.1
+Using responders 2.2.0
+Installing font-awesome-rails 4.6.1.0
+Using jquery-rails 4.1.1
+Using jquery-ui-rails 5.0.5
+Using rails 4.2.4
+Using sass-rails 5.0.4
+Using web-console 2.3.0
+Using turbolinks 2.5.3
+Using devise 4.0.1
+Installing rails_admin 0.8.1
+Bundle complete! 20 Gemfile dependencies, 77 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+Post-install message from haml:
+
+HEADS UP! Haml 4.0 has many improvements, but also has changes that may break
+your application:
+
+* Support for Ruby 1.8.6 dropped
+* Support for Rails 2 dropped
+* Sass filter now always outputs <style> tags
+* Data attributes are now hyphenated, not underscored
+* html2haml utility moved to the html2haml gem
+* Textile and Maruku filters moved to the haml-contrib gem
+
+For more info see:
+
+http://rubydoc.info/github/haml/haml/file/CHANGELOG.md
+
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g scaffold Course title:string course_picture:string
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/client/run.rb:76: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 12583
+      invoke  active_record
+      create    db/migrate/20160502193057_create_courses.rb
+      create    app/models/course.rb
+      invoke    test_unit
+      create      test/models/course_test.rb
+      create      test/fixtures/courses.yml
+      invoke  resource_route
+       route    resources :courses
+      invoke  scaffold_controller
+      create    app/controllers/courses_controller.rb
+      invoke    erb
+      create      app/views/courses
+      create      app/views/courses/index.html.erb
+      create      app/views/courses/edit.html.erb
+      create      app/views/courses/show.html.erb
+      create      app/views/courses/new.html.erb
+      create      app/views/courses/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/courses_controller_test.rb
+      invoke    helper
+      create      app/helpers/courses_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+      create      app/views/courses/index.json.jbuilder
+      create      app/views/courses/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/courses.coffee
+      invoke    scss
+      create      app/assets/stylesheets/courses.scss
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.scss
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g controller home index
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 12642
+      create  app/controllers/home_controller.rb
+       route  get 'home/index'
+      invoke  erb
+      create    app/views/home
+      create    app/views/home/index.html.erb
+      invoke  test_unit
+      create    test/controllers/home_controller_test.rb
+      invoke  helper
+      create    app/helpers/home_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/home.coffee
+      invoke    scss
+      create      app/assets/stylesheets/home.scss
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g devise:install
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 12701
+      create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. If you are deploying on Heroku with Rails 3.2 only, you may want to set:
+
+       config.assets.initialize_on_precompile = false
+
+     On config/application.rb forcing your application to not access the DB
+     or load models when precompiling your assets.
+
+  5. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g devise User
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 12761
+      invoke  active_record
+      create    db/migrate/20160502193451_devise_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+      insert    app/models/user.rb
+       route  devise_for :users
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rake db:migrate
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+== 20160502193057 CreateCourses: migrating ====================================
+-- create_table(:courses)
+   -> 0.0012s
+== 20160502193057 CreateCourses: migrated (0.0013s) ===========================
+
+== 20160502193451 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0020s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0012s
+-- add_index(:users, :reset_password_token, {:unique=>true})
+   -> 0.0017s
+== 20160502193451 DeviseCreateUsers: migrated (0.0052s) =======================
+
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g rails_admin:install
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 14026
+           ?  Where do you want to mount rails_admin? Press <enter> for [admin] > 
+       route  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+      create  config/initializers/rails_admin.rb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+##############
+for edit in reg form
+##############
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails generate devise:views
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 5724
+      invoke  Devise::Generators::SharedViewsGenerator
+      create    app/views/devise/shared
+      create    app/views/devise/shared/_links.html.erb
+      invoke  form_for
+      create    app/views/devise/confirmations
+      create    app/views/devise/confirmations/new.html.erb
+      create    app/views/devise/passwords
+      create    app/views/devise/passwords/edit.html.erb
+      create    app/views/devise/passwords/new.html.erb
+      create    app/views/devise/registrations
+      create    app/views/devise/registrations/edit.html.erb
+      create    app/views/devise/registrations/new.html.erb
+      create    app/views/devise/sessions
+      create    app/views/devise/sessions/new.html.erb
+      create    app/views/devise/unlocks
+      create    app/views/devise/unlocks/new.html.erb
+      invoke  erb
+      create    app/views/devise/mailer
+      create    app/views/devise/mailer/confirmation_instructions.html.erb
+      create    app/views/devise/mailer/password_change.html.erb
+      create    app/views/devise/mailer/reset_password_instructions.html.erb
+      create    app/views/devise/mailer/unlock_instructions.html.erb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$
+******************************************************************************
+to create field in courses table
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g migration add_to_courses
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 22480
+      invoke  active_record
+      create    db/migrate/20160503144833_add_to_courses.rb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rake db:migrate
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+== 20160503144833 AddToCourses: migrating =====================================
+-- add_reference(:courses, :user, {:index=>true, :foreign_key=>true})
+   -> 0.0027s
+== 20160503144833 AddToCourses: migrated (0.0029s) ============================
+
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+******************************************************************************
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails generate uploader Profile/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/spring-1.7.1/lib/spring/client/run.rb:76: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 5046
+      create  app/uploaders/profile_uploader.rb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails generate uploader Course/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 6260
+      create  app/uploaders/course_uploader.rb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rails g scaffold Lecture title:string content:text attached_file:string course:references/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 8745
+      invoke  active_record
+      create    db/migrate/20160503181418_create_lectures.rb
+      create    app/models/lecture.rb
+      invoke    test_unit
+      create      test/models/lecture_test.rb
+      create      test/fixtures/lectures.yml
+      invoke  resource_route
+       route    resources :lectures
+      invoke  scaffold_controller
+      create    app/controllers/lectures_controller.rb
+      invoke    erb
+      create      app/views/lectures
+      create      app/views/lectures/index.html.erb
+      create      app/views/lectures/edit.html.erb
+      create      app/views/lectures/show.html.erb
+      create      app/views/lectures/new.html.erb
+      create      app/views/lectures/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/lectures_controller_test.rb
+      invoke    helper
+      create      app/helpers/lectures_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+      create      app/views/lectures/index.json.jbuilder
+      create      app/views/lectures/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/lectures.coffee
+      invoke    scss
+      create      app/assets/stylesheets/lectures.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.scss
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ rake db:migrate
+/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/lib/bundler.rb:289: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+== 20160503181418 CreateLectures: migrating ===================================
+-- create_table(:lectures)
+   -> 0.0021s
+== 20160503181418 CreateLectures: migrated (0.0023s) ==========================
+
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$  rails generate uploader Attached/home/nourhan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /home/nourhan/Desktop/JSFrameWork/phoneGap/android-sdk-linux in PATH, mode 040777
+Running via Spring preloader in process 10169
+      create  app/uploaders/attached_uploader.rb
+nourhan@nourhan-Satellite-L655:~/Desktop/Ruby/gemsTrialProjects/gemProject7$ 
