@@ -1,0 +1,316 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 05:59:48', '2016-05-05 05:59:48', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 05:59:48', '2016-05-05 05:59:48', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 05:59:48', '2016-05-05 05:59:48', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 05:59:48', '2016-05-05 05:59:48', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "courses"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 05:59:48', '2016-05-05 05:59:48', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 05:59:48', '2016-05-05 05:59:48', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 05:59:48', '2016-05-05 05:59:48', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 05:59:48', '2016-05-05 05:59:48', 298486374)
+SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 05:59:48', '2016-05-05 05:59:48', 298486374)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:07:12', '2016-05-05 06:07:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:07:12', '2016-05-05 06:07:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 06:07:12', '2016-05-05 06:07:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 06:07:12', '2016-05-05 06:07:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "courses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:07:12', '2016-05-05 06:07:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:07:12', '2016-05-05 06:07:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 06:07:12', '2016-05-05 06:07:12', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 06:07:12', '2016-05-05 06:07:12', 298486374)
+SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2016-05-05 06:07:12', '2016-05-05 06:07:12', 298486374)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:11:26', '2016-05-05 06:11:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:11:26', '2016-05-05 06:11:26', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 06:11:26', '2016-05-05 06:11:26', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lectures" ("title", "content", "attached_file", "course_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', NULL, '2016-05-05 06:11:26', '2016-05-05 06:11:26', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "courses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:11:26', '2016-05-05 06:11:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:11:26', '2016-05-05 06:11:26', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 06:11:26', '2016-05-05 06:11:26', 980190962)[0m
+  [1m[35m (132.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------
+UserTest: test_valid_last_user
+------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:15:56', '2016-05-05 06:15:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:15:56', '2016-05-05 06:15:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec1Ruby', 7, '2016-05-05 06:15:56', '2016-05-05 06:15:56', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:15:56', '2016-05-05 06:15:56', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:15:56', '2016-05-05 06:15:56', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 06:15:56', '2016-05-05 06:15:56', 980190962)
+  [1m[36m (138.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+LectureTest: test_valid_lec1_on_Ruby_Course
+-------------------------------------------
+  [1m[36mLecture Load (0.3ms)[0m  [1mSELECT  "lectures".* FROM "lectures"  ORDER BY "lectures"."id" DESC LIMIT 1[0m
+  [1m[35mLecture Load (0.2ms)[0m  SELECT  "lectures".* FROM "lectures"  ORDER BY "lectures"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:21:46', '2016-05-05 06:21:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 06:21:46', '2016-05-05 06:21:46', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 06:21:46', '2016-05-05 06:21:46', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:21:46', '2016-05-05 06:21:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 06:21:46', '2016-05-05 06:21:46', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 06:21:46', '2016-05-05 06:21:46', 980190962)
+  [1m[36m (198.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+LectureTest: test_valid_lec1_on_Ruby_Course
+-------------------------------------------
+  [1m[36mLecture Load (0.2ms)[0m  [1mSELECT  "lectures".* FROM "lectures"  ORDER BY "lectures"."id" DESC LIMIT 1[0m
+  [1m[35mLecture Load (0.2ms)[0m  SELECT  "lectures".* FROM "lectures"  ORDER BY "lectures"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 14:34:14', '2016-05-05 14:34:14', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 14:34:14', '2016-05-05 14:34:14', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 14:34:14', '2016-05-05 14:34:14', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 14:34:14', '2016-05-05 14:34:14', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 14:34:14', '2016-05-05 14:34:14', 298486374)
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 14:34:14', '2016-05-05 14:34:14', 980190962)
+  [1m[36m (109.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"7"}}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 14:49:51', '2016-05-05 14:49:51', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 14:49:51', '2016-05-05 14:49:51', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 14:49:51', '2016-05-05 14:49:51', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 14:49:51', '2016-05-05 14:49:51', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 14:49:51', '2016-05-05 14:49:51', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 14:49:51', '2016-05-05 14:49:51', 980190962)
+  [1m[36m (129.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#new as HTML
+  Parameters: {"user"=>{"name"=>"Ali", "email"=>"ali@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:00:44', '2016-05-05 15:00:44', 980190962)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:00:44', '2016-05-05 15:00:44', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:00:44', '2016-05-05 15:00:44', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:00:44', '2016-05-05 15:00:44', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:00:44', '2016-05-05 15:00:44', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:00:44', '2016-05-05 15:00:44', 980190962)
+  [1m[36m (131.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#new as HTML
+  Parameters: {"user"=>{"name"=>"Ali", "email"=>"ali@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:05:15', '2016-05-05 15:05:15', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:05:15', '2016-05-05 15:05:15', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:05:15', '2016-05-05 15:05:15', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:05:15', '2016-05-05 15:05:15', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:05:15', '2016-05-05 15:05:15', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:05:15', '2016-05-05 15:05:15', 980190962)
+  [1m[36m (136.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:05:51', '2016-05-05 15:05:51', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:05:51', '2016-05-05 15:05:51', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:05:51', '2016-05-05 15:05:51', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:05:51', '2016-05-05 15:05:51', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:05:51', '2016-05-05 15:05:51', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:05:51', '2016-05-05 15:05:51', 980190962)
+  [1m[36m (115.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"8"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 980190962]]
+Unpermitted parameter: user_id
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE "courses"."title" = 'ObjectOrientedProgramming' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ObjectOrientedProgramming"], ["user_id", 980190962], ["created_at", "2016-05-05 15:05:51.927868"], ["updated_at", "2016-05-05 15:05:51.927868"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/courses/980190963
+Completed 302 Found in 71ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:06:55', '2016-05-05 15:06:55', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:06:55', '2016-05-05 15:06:55', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:06:55', '2016-05-05 15:06:55', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:06:55', '2016-05-05 15:06:55', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:06:55', '2016-05-05 15:06:55', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:06:55', '2016-05-05 15:06:55', 980190962)
+  [1m[36m (122.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"8"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 980190962]]
+Unpermitted parameter: user_id
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE "courses"."title" = 'ObjectOrientedProgramming' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ObjectOrientedProgramming"], ["user_id", 980190962], ["created_at", "2016-05-05 15:06:55.772646"], ["updated_at", "2016-05-05 15:06:55.772646"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/courses/980190963
+Completed 302 Found in 23ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:11:29', '2016-05-05 15:11:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:11:29', '2016-05-05 15:11:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:11:29', '2016-05-05 15:11:29', 980190962)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:11:29', '2016-05-05 15:11:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:11:29', '2016-05-05 15:11:29', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:11:29', '2016-05-05 15:11:29', 980190962)
+  [1m[36m (132.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"7"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:46:21', '2016-05-05 15:46:21', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:46:21', '2016-05-05 15:46:21', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:46:21', '2016-05-05 15:46:21', 980190962)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:46:21', '2016-05-05 15:46:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:46:21', '2016-05-05 15:46:21', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:46:21', '2016-05-05 15:46:21', 980190962)
+  [1m[36m (122.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "courses"[0m
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"7"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:46:35', '2016-05-05 15:46:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at", "id") VALUES ('MyText', '2016-05-05 15:46:35', '2016-05-05 15:46:35', 298486374)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "lectures"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "lectures" ("title", "course_id", "created_at", "updated_at", "id") VALUES ('Lec2Ruby', 7, '2016-05-05 15:46:35', '2016-05-05 15:46:35', 980190962)[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "courses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:46:35', '2016-05-05 15:46:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "courses" ("title", "course_picture", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-05-05 15:46:35', '2016-05-05 15:46:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at", "id") VALUES ('abc', '2016-05-05 15:46:35', '2016-05-05 15:46:35', 980190962)
+  [1m[36m (146.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CoursesControllerTest: test_should_create_course
+------------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "courses"
+Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"title"=>"ObjectOrientedProgramming", "user_id"=>"8"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 980190962]]
+Unpermitted parameter: user_id
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mCourse Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "courses" WHERE "courses"."title" = 'ObjectOrientedProgramming' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ObjectOrientedProgramming"], ["user_id", 980190962], ["created_at", "2016-05-05 15:46:35.521417"], ["updated_at", "2016-05-05 15:46:35.521417"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/courses/980190963
+Completed 302 Found in 22ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "courses"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
